@@ -20,21 +20,7 @@
 └── .gitignore
 ```
 
-## 本地运行
 
-由于使用了相对路径引用，建议通过本地服务器访问，避免浏览器对 `file://` 的限制。
-
-任选一种方式：
-
-```bash
-# Python 3
-python3 -m http.server 8000
-
-# Node.js (需先安装 http-server)
-npx http-server -p 8000
-```
-
-访问 http://localhost:8000
 
 ## 移动端调试
 
