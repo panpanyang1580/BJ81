@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#2d332e">
+    <title>商城 - 北京81</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/shop.css">
+</head>
+<body>
+    <div id="app" class="page shop-page">
+        <header class="topbar">
+            <div class="topbar__inner">
+                <h1 class="topbar__title">商城</h1>
+            </div>
+        </header>
+
+        <div class="shop-tabs" role="tablist">
+            <button class="shop-tabs__btn is-active" type="button" role="tab" aria-selected="true" data-tab="周边">周边商城</button>
+            <button class="shop-tabs__btn" type="button" role="tab" aria-selected="false" data-tab="车辆">车辆商城</button>
+        </div>
+
+        <main class="shop-main">
+            <!-- 周边商城 -->
+            <section class="shop-pane is-active" data-pane="周边">
+                <div class="shop-banner">
+                    <img src="assets/images/shop/banner-tent.png" alt="户外露营装备" />
+                </div>
+
+                <div class="shop-grid">
+                    <a class="prod" href="javascript:void(0)">
+                        <div class="prod__img"><img src="assets/images/shop/product-table.png" alt="" /></div>
+                        <h3 class="prod__title">铝合金蛋卷桌</h3>
+                        <p class="prod__desc">承重力强 折叠便捷</p>
+                        <p class="prod__price"><span class="prod__price-num">¥36</span><span class="prod__price-extra">+600军饷</span></p>
+                    </a>
+
+                    <a class="prod" href="javascript:void(0)">
+                        <div class="prod__img"><img src="assets/images/shop/product-pot.png" alt="" /></div>
+                        <h3 class="prod__title">户外锅具套装</h3>
+                        <p class="prod__desc">超轻组合 一袋收纳</p>
+                        <p class="prod__price"><span class="prod__price-num">¥156</span><span class="prod__price-extra">+900军饷</span></p>
+                    </a>
+
+                    <a class="prod" href="javascript:void(0)">
+                        <div class="prod__img"><img src="assets/images/shop/product-tent.png" alt="" /></div>
+                        <h3 class="prod__title">户外自动帐篷</h3>
+                        <p class="prod__desc">一键搭建 防风防雨</p>
+                        <p class="prod__price"><span class="prod__price-num">¥376</span><span class="prod__price-extra">+1200军饷</span></p>
+                    </a>
+
+                    <a class="prod" href="javascript:void(0)">
+                        <div class="prod__img"><img src="assets/images/shop/product-cup.png" alt="" /></div>
+                        <h3 class="prod__title">家车两用咖啡杯</h3>
+                        <p class="prod__desc">真空保温 长效锁鲜</p>
+                        <p class="prod__price"><span class="prod__price-num">¥356</span><span class="prod__price-extra">+800军饷</span></p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 车辆商城 -->
+            <section class="shop-pane" data-pane="车辆">
+                <div class="car-hero">
+                    <img class="car-hero__img" src="assets/images/shop/car-render.png" alt="北京81 整车" />
+                    <div class="car-hero__shade"></div>
+                    <div class="car-view" role="tablist" aria-label="车辆视角">
+                        <div class="car-view__group">
+                            <button class="car-view__chip is-active" type="button">45度</button>
+                            <button class="car-view__chip" type="button">正面</button>
+                            <button class="car-view__chip" type="button">侧面</button>
+                            <button class="car-view__chip" type="button">背面</button>
+                        </div>
+                        <button class="car-view__chip car-view__chip--full" type="button">
+                            <img src="assets/images/shop/unfold.svg" alt="" />
+                            <span>全屏</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="car-info">
+                    <div class="car-info__card">
+                        <div class="car-info__icon" aria-hidden="true">
+                            <img src="assets/images/shop/%E6%A8%A1%E5%9E%8B%E8%BD%A6.svg" alt="" />
+                        </div>
+                        <h3 class="car-info__title">战术级气密结构</h3>
+                        <p class="car-info__desc">毒气与生化污染都无法穿透的最强防御</p>
+                    </div>
+                    <div class="car-info__card">
+                        <div class="car-info__icon" aria-hidden="true">
+                            <img src="assets/images/shop/%E6%A8%A1%E5%9E%8B%E8%BD%A6%20(1).svg" alt="" />
+                        </div>
+                        <h3 class="car-info__title">双模引擎切换</h3>
+                        <p class="car-info__desc">超强动力迅速抵达战场关键点，能耗使用</p>
+                    </div>
+                </div>
+
+                <div class="car-actions">
+                    <button class="car-btn car-btn--primary" type="button">
+                        <img class="car-btn__icon" src="assets/images/shop/%E8%AF%95%E4%B9%98%E8%AF%95%E9%A9%BE.svg" alt="" />
+                        <span>试乘试驾</span>
+                    </button>
+                    <button class="car-btn car-btn--ghost" type="button" disabled>
+                        <img class="car-btn__icon car-btn__icon--ghost" src="assets/images/shop/bag-check.svg" alt="" />
+                        <span>下订</span>
+                    </button>
+                </div>
+
+                <p class="car-tip">即将开放，排产依照下单顺序</p>
+            </section>
+        </main>
+
+        <nav class="tabbar" aria-label="主导航">
+            <a class="tabbar__item" href="index.html">
+                <span class="tabbar__icon" aria-hidden="true">
+                    <img src="assets/images/community/%E7%A4%BE%E5%8C%BA-%E9%80%89%E4%B8%AD.svg" alt="" />
+                </span>
+                <span class="tabbar__label">社区</span>
+            </a>
+            <a class="tabbar__item is-active" href="javascript:void(0)">
+                <span class="tabbar__icon" aria-hidden="true">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5667 5C22.6128 5.00059 23.4826 5.80734 23.5609 6.85059L24.7611 22.8506C24.8479 24.0102 23.9296 24.9991 22.7669 25H7.07748C5.91413 24.9999 4.99642 24.0107 5.08334 22.8506L6.28353 6.85059C6.36185 5.80709 7.23126 5.00011 8.27768 5H21.5667ZM10.0599 9C10.0599 11.7282 12.2722 13.9403 15.0003 13.9404C17.7282 13.9399 19.9408 11.728 19.9408 9V8H18.0599V9C18.0599 10.6897 16.6899 12.0591 15.0003 12.0596C13.3105 12.0594 11.9408 10.6899 11.9408 9V8H10.0599V9Z" fill="currentColor"/>
+                    </svg>
+                </span>
+                <span class="tabbar__label">商城</span>
+            </a>
+            <a class="tabbar__item" href="javascript:void(0)">
+                <span class="tabbar__icon" aria-hidden="true">
+                    <img src="assets/images/community/81-%E6%9C%AA%E9%80%89%E4%B8%AD.svg" alt="" />
+                </span>
+                <span class="tabbar__label">我的81</span>
+            </a>
+            <a class="tabbar__item" href="javascript:void(0)">
+                <span class="tabbar__icon" aria-hidden="true">
+                    <img src="assets/images/community/%E6%9C%8D%E5%8A%A1-%E6%9C%AA%E9%80%89%E4%B8%AD.svg" alt="" />
+                </span>
+                <span class="tabbar__label">服务</span>
+            </a>
+            <a class="tabbar__item" href="javascript:void(0)">
+                <span class="tabbar__icon" aria-hidden="true">
+                    <img src="assets/images/community/%E4%BC%9A%E5%91%98-%E6%9C%AA%E9%80%89%E4%B8%AD.svg" alt="" />
+                </span>
+                <span class="tabbar__label">会员</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="scripts/shop.js"></script>
+</body>
+</html>
