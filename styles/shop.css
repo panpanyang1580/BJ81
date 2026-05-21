@@ -6,6 +6,8 @@
 
 /* ------------ TAB SWITCHER ------------ */
 .shop-tabs {
+    position: relative;
+    z-index: 5;
     display: flex;
     width: 100%;
     height: 90px;
@@ -131,23 +133,15 @@
 .car-hero {
     position: relative;
     width: 100%;
-    aspect-ratio: 375 / 600;
     background-color: #1a1f1c;
-    background-image: url("../assets/images/shop/car-bg.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
     overflow: visible;
 }
 
 .car-hero__img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center top;
     display: block;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
 }
 
 .car-hero__shade {
@@ -161,14 +155,12 @@
 }
 
 .car-view {
-    position: absolute;
-    left: 20px;
-    right: 20px;
-    bottom: 105px;
+    position: relative;
+    z-index: 3;
+    margin: -180px 20px 0;
     display: flex;
     justify-content: space-between;
     gap: 8px;
-    z-index: 2;
 }
 
 .car-view__group {
@@ -228,7 +220,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 11px;
-    margin-top: -80px;
+    margin-top: 16px;
     padding: 0 20px;
 }
 
@@ -280,7 +272,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 11px;
-    padding: 20px 20px 0;
+    padding: 16px 20px 0;
 }
 
 .car-btn {
